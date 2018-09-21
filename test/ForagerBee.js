@@ -1,6 +1,6 @@
 require('mocha')
-var chai = require('chai')
-var expect = chai.expect
+const chai = require('chai')
+const expect = chai.expect
 const ForagerBee = require('../src/ForagerBee')
 
 describe('ForagerBee class functionality', () => {
