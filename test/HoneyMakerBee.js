@@ -1,3 +1,8 @@
+require('mocha')
+const chai = require('chai')
+const expect = chai.expect
+const HoneyMakerBee = require('../src/HoneyMakerBee')
+
 describe('HoneyMakerBee class functionality', () => {
   var honeyBee;
 

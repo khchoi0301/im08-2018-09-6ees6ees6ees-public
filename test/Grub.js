@@ -1,3 +1,8 @@
+require('mocha')
+const chai = require('chai')
+const expect = chai.expect
+const Grub = require('../src/Grub')
+
 describe('Grub class functionality', () => {
   var grub;
 
