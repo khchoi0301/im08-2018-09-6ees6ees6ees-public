@@ -1,5 +1,5 @@
 {
-  "name": "im07-2018-06-6ees6ees6ees",
+  "name": "6ees6ees6ees",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,21 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/"
+    "test": "mocha test/",
+    "precommit": "lint-staged",
+    "lint": "eslint src/"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "eslint",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "node_modules/",
+      "**/test/*.js"
+    ]
   },
   "repository": {
     "type": "git",
